@@ -1,0 +1,436 @@
+/* Estilos generales */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+    background-color: #14124c;
+    font-family: var(--font-primary);
+}
+
+:root {
+    /* font */
+    --font-primary: "Source Sans 3", sans-serif;
+    /* Background Colors */
+    --primary-bg: #14124c; /* Azul Oscuro */
+    --white-bg: rgb(255, 255, 255); /* Blanco */
+    --hover-bg: #14124c; /* Azul oscuro */
+    --input-bg: #f2f3f4;
+    --bg-ligth-blue: rgba(58, 84, 171, 1);
+    --bg-btn-edit: #f7f8ff;
+
+    /* Text Colors */
+    --primary-text: #14124c; /* Azul Oscuro */
+    --secondary-text: #6c757d; /* Gris Oscuro */
+
+    --ligth-blue: rgba(58, 84, 171, 1); /* azul claro */
+    --white-text: rgb(255, 255, 255); /* Blanco */
+
+    /* Tamaños de fuente */
+    --font-smaller: 12px; /* Pequeño */
+    --font-small: 14px;
+    --font-medium: 16px;
+    --font-large: 20px;
+    --font-extra-large: 24px;
+}
+
+.text-ligth-blue {
+    color: var(--ligth-blue) !important;
+}
+.text-dark-blue {
+    color: var(--primary-text);
+}
+.text-white {
+    color: var(--white-text);
+}
+.bg-blue-dark {
+    background-color: var(--primary-bg);
+}
+.bg-ligth-blue {
+    background-color: var(--bg-ligth-blue);
+}
+.bg-edit {
+    background-color: var(--bg-btn-edit);
+}
+
+/* Tamaños de fuente */
+.text-smaller {
+    font-size: var(--font-smaller);
+}
+.text-small {
+    font-size: var(--font-small);
+}
+.text-medium {
+    font-size: var(--font-medium);
+}
+.text-large {
+    font-size: var(--font-large);
+}
+.text-extra-large {
+    font-size: var(--font-extra-large);
+}
+.buttons-hover:hover {
+    background-color: var(--hover-bg);
+    color: var(--white-text);
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+.input-bg {
+    background-color: var(--input-bg);
+}
+
+/* Responsividad para pantallas menores a 767px */
+@media (max-width: 767px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-uno,
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
+/*Styles Login*/
+/* Estilos específicos de las cards */
+
+.left-card {
+    background-color: #14124c;
+    color: #14124c;
+    background-image: url("../img/icons-left.png");
+    background-size: 744px;
+}
+
+/* Estilos para la card-uno (izquierda) */
+.card-one {
+    height: 100vh;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* Estilos para la card principal (derecha) */
+.card {
+    height: 100vh;
+    border-top-left-radius: 43px;
+    border-bottom-left-radius: 43px;
+    background-image: url("../img/icons-card-rigth.png");
+    border: none;
+}
+
+.card-dos {
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+/* Colores de fondo */
+.medio {
+    background-color: #14124c;
+}
+.medi {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: right;
+}
+
+/* Formato de etiquetas y textos */
+.form-label {
+    font-family: "Source Sans 3", sans-serif;
+}
+.forgot {
+    color: white;
+}
+
+/*Border radius Cards Hijas*/
+.card-tres {
+    border-top-left-radius: 2.18rem;
+    border-bottom-left-radius: 2.18rem;
+}
+
+/* Para el contenedor de la card-tres con fondo blanco */
+.card-tres.medi {
+    max-width: 23.75rem;
+    height: 80vh;
+}
+
+.card-two.login-cardd {
+    width: 80vh; /* Ancho relativo */
+    max-width: 22.8rem; /* Límite máximo para pantallas grandes */
+    height: 80vh;
+    padding: 20px;
+    background-color: #14124c;
+}
+.card-three {
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+/*Part Verify Email*/
+.card-three.verify-email {
+    width: 80%; /* Ancho relativo */
+    max-width: 365px; /* Límite máximo para pantallas grandes */
+    height: 80%;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code-input {
+    text-align: center; /* Centra el texto */
+    width: 20%; /* Ancho relativo */
+    max-width: 45px; /* Límite máximo para pantallas grandes */
+    height: 60px;
+    font-size: 24px;
+    border-radius: 12px;
+    margin: 0 5px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-right: 220px;
+    font-size: 18px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.card-two {
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/* Márgenes para los h3 dentro de card-tres */
+.card-tres h3:first-of-type {
+    margin-bottom: 10px;
+}
+.card-tres h3:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+/* Tamaño máximo para la imagen dentro de card-tres */
+.card-tres img {
+    max-width: 17.5rem;
+}
+
+/* Estilos para card-dos con clase medio */
+.card-dos.medio {
+    width: 380px;
+    height: 72%;
+    --bs-border-radius: 40px;
+}
+/* Estilos para el formulario en card-dos */
+form.shadow.rounded {
+    max-width: 400px;
+    margin: auto;
+}
+
+/*** emptyState*/
+
+.stileText {
+    color: black !important;
+    font-weight: 100 !important;
+}
+.btn-custom-rf {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar {
+    width: 15.7rem;
+    min-height: 100vh;
+    background-color: #14124c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1030;
+}
+#userDropdown::after {
+    display: none !important;
+}
+/* estade focus Rf*/
+.btn-custom-rf:focus {
+    background-color: var(--primary-bg); /* Mantener el color azul */
+}
+
+.content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
+}
+
+ /* Hamburguer movile */
+ @media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Main Content */
+.main-content {
+    transition: margin-left 0.4s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        margin-left: 250px;
+    }
+}
+
+.span-zoe {
+    margin-right: 5.5rem;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.header {
+    box-shadow: 5px 5px 15px rgba(233, 232, 232, 0.3);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+        position: fixed;
+        width: 250px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #14124c;
+        z-index: 1050;
+        transition: transform 0.3s ease-in-out;
+    }
+    .sidebar.show {
+        display: block;
+        transform: translateX(0);
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+.page-item .page-link {
+    color: #77777d; /* Azul oscuro para los números */
+    border: none; /* Sin borde */
+    background-color: transparent;
+}
+.page-item.active .page-link {
+    background-color: #0b0b46; /* Azul oscuro */
+    color: white;
+    border-radius: 8px; /* Redondeado */
+}
+
+.tex-opacity {
+    color: rgba(112, 112, 112, 0.5); /* 0.5 = 50% de transparencia */
+}
+.pending-status {
+    background-color: #f6ae2d;
+}
+.accepted-status {
+    background-color: #19d483;
+}
+.declined-status {
+    background-color: #ff6663;
+}
+
+/***********************HomeShowOptions*****************************/
+
+.input-group-text button {
+    border: none; /* Quita el borde */
+    background: none; /* Elimina el fondo */
+    padding: 0; /* Ajusta el espacio */
+}
+.text-red {
+    color: #ff6663 !important;
+}
+.dropdown-menu {
+    position: fixed !important; /* Fija el dropdown fuera del sidebar */
+    left: 250px; /* Ajusta según el ancho de tu sidebar */
+    top: 80px; /* Ajusta según la altura del botón */
+    z-index: 1050; /* Asegura que esté sobre otros elementos */
+    border-radius: 15px;
+    width: 185px;
+    border: none;
+    padding: 0;
+    display: none; /* Oculto por defecto */
+    width: 250px;
+}
+
+.btn-outline-cl {
+    border-color: rgba(58, 84, 171, 1) !important;
+}
+.btn-outline-cl:hover {
+    background-color: rgba(58, 84, 171, 1) !important;
+    color: white !important;
+}
+
+/* Cambia el color solo cuando el usuario pasa el mouse por un item */
+.dropdown-item:hover {
+    background-color: #3a54ab !important;
+    color: white !important;
+}
+
+.container-fluid-boxShadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu-dark {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: none;
+}
+
+.dropdown-menu-dar {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    width: 12.5rem;
+    overflow: hidden;
+    border: none;
+}
+
+.mt-container-f {
+    margin-top: 10rem;
+}
+.dropdown-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+.dropdown-item.text-danger {
+    color: #ff4d4d;
+}
+.dropdown-item.text-danger:hover {
+    background: rgba(255, 77, 77, 0.1);
+}
+.dropdown-menu-dari {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12;
+    width: 15%;
+    overflow: hidden;
+    border: none;
+}
+.search-btn-custom {
+    width: 2.18rem;
+    height: 2.18rem;
+}
+
+/*MODAL*/
+
+.border-d {
+    box-shadow: 2px 2px 10px 3px rgba(182, 181, 181, 0.3);
+    border-radius: 15px;
+}
