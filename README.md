@@ -14,9 +14,12 @@ EL service hace la logica de negocio para que haga el math
 entre el service y el controlador
 
 ###
-
+##autodidacta
 El requet es la variable que se encarga de recibir los datos
 de el usuario
+##plantilla de mascotas
+##laravel vue3
+##rutas con inertia
 
 
 
