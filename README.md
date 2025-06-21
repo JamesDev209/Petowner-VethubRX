@@ -17,6 +17,8 @@ entre el service y el controlador
 ##autodidacta
 El requet es la variable que se encarga de recibir los datos
 de el usuario
+##plantilla de mascotas
+##laravel vue3
 
 
 
